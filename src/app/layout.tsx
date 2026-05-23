@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import PageTransition from "@/components/page-transition";
 
 import "./globals.css";
 
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "LunaForge builds fast, scalable & SEO-optimized web applications using Next.js, Fastify, PostgreSQL, and modern web technologies.",
+    "3 MERN stack engineers building fast, scalable & SEO-optimized web applications with 4+ years of production experience.",
 
   keywords: [
     "Full Stack Developer",
@@ -69,7 +70,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
       </body>
     </html>
   );
