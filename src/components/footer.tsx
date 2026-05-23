@@ -1,20 +1,6 @@
 import Link from "next/link";
 import Container from "./container";
-
-const socials = [
-  {
-    name: "GitHub",
-    href: "https://github.com",
-  },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com",
-  },
-  {
-    name: "Email",
-    href: "mailto:hello@lunaforge.dev",
-  },
-];
+import { navLinks, socialLinks } from "../data/navigation";
 
 export default function Footer() {
   return (
@@ -33,7 +19,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            {socials.map((social) => (
+            {socialLinks.map((social) => (
               <Link
                 key={social.name}
                 href={social.href}

@@ -23,4 +23,12 @@ export const team = [
     experience: "4+ years",
     bio: "Expert in building performant UIs and implementing technical SEO strategies for search visibility.",
   },
+  {
+    name: "Dev Four",
+    role: "DevOps & Integration Engineer",
+    specialization: "Infrastructure & Deployment",
+    focus: "CI/CD, AWS, Docker, System Design",
+    experience: "4+ years",
+    bio: "Handles deployment pipelines, cloud infrastructure, and system architecture to keep production running reliably.",
+  },
 ];

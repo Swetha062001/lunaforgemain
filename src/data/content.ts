@@ -1,12 +1,12 @@
 export const siteContent = {
   brand: {
     name: "LunaForge",
-    tagline: "3 engineers building fast, scalable & SEO-optimized web applications.",
-    description: "LunaForge is a team of 3 MERN stack engineers with 4+ years of production experience building high-performance web applications, scalable APIs, and SEO-first digital products.",
+    tagline: "4 engineers building fast, scalable & SEO-optimized web applications.",
+    description: "LunaForge is a team of 4 MERN stack engineers with 4+ years of production experience building high-performance web applications, scalable APIs, and SEO-first digital products.",
   },
   hero: {
     subtitle: "LunaForge",
-    title: "3 Engineers, 4+ Years Experience, Proven Results",
+    title: "4 Engineers, 4+ Years Experience, Proven Results",
     description: "We're a focused team of MERN stack developers specializing in building high-performance web applications, scalable backend systems, technical SEO, and modern frontend architecture for businesses that scale fast.",
     buttons: {
       primary: "View Our Work",
@@ -30,7 +30,7 @@ export const siteContent = {
   about: {
     section: "About LunaForge",
     title: "Who We Are",
-    intro: "A 3-person team of MERN stack engineers with 4+ years of production experience building digital products that scale.",
+    intro: "A 4-person team of MERN stack engineers with 4+ years of production experience building digital products that scale.",
     paragraphs: [
       "We started LunaForge because we believe there's a better way to build web applications. Not just faster code, but smarter architecture. Not just beautiful UIs, but performant ones. And not just websites, but scalable systems built for growth.",
       "Our team has built real customer-facing platforms from the ground up—from initial architecture to production deployment. We understand what it takes to build applications that perform under pressure, rank in search results, and delight users.",

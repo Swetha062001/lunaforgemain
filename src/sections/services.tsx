@@ -1,34 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Code2,
-  Globe,
-  Database,
-} from "lucide-react";
 import Container from "../components/container";
-
-
-const services = [
-  {
-    title: "Full Stack Product Development",
-    description:
-      "Scalable SaaS platforms, dashboards, booking systems, and modern web applications engineered for performance and growth.",
-    icon: Code2,
-  },
-  {
-    title: "SEO & Performance Optimization",
-    description:
-      "Technical SEO, Core Web Vitals optimization, metadata architecture, and lightning-fast user experiences.",
-    icon: Globe,
-  },
-  {
-    title: "Backend & API Engineering",
-    description:
-      "Fastify APIs, Redis caching, PostgreSQL architecture, and scalable backend systems built for production traffic.",
-    icon: Database,
-  },
-];
+import { services } from "../data/services";
 
 export default function Services() {
   return (

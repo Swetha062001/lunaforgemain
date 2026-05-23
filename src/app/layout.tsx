@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
+import PageTransition from "../components/page-transition";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "3 MERN stack engineers building fast, scalable & SEO-optimized web applications with 4+ years of production experience.",
+    "4 MERN stack engineers building fast, scalable & SEO-optimized web applications with 4+ years of production experience.",
 
   keywords: [
     "Full Stack Developer",
@@ -66,10 +67,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "LunaForge",
+    url: "https://lunaforge.dev",
+    description: "4 MERN stack engineers building fast, scalable & SEO-optimized web applications with 4+ years of production experience.",
+    serviceType: ["Full Stack Development", "Backend Engineering", "Technical SEO"],
+    sameAs: [
+      "https://github.com/lunaforge",
+      "https://linkedin.com/company/lunaforge",
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className={inter.className}>
-        {children}
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
